@@ -1,11 +1,11 @@
-# Taskido: Obsidian-Tasks-Timeline
-## [Click here!](https://github.com/702573N/Obsidian-Tasks-Timeline)
+# Taskido: obsidian-task-timeline-view
+## [Click here!](https://github.com/702573N/obsidian-task-timeline-view)
 
 <p align="center"><img width="400" alt="Semi_Transparent" src="https://user-images.githubusercontent.com/59178587/210307060-5ed916ee-819d-46b1-9a5e-efdd15728957.png"></p>
 
 ---
 
-# Obsidian-Tasks-Calendar
+# obsidian-task-calendar-view
 #### A custom view build with [Obsidian-Dataview](https://github.com/blacksmithgu/obsidian-dataview) to display tasks from [Obsidian-Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) and from your daily notes in a highly customisable calendar with a wide variety of views
 
 ![light](https://user-images.githubusercontent.com/59178587/203789595-ede6138f-2c29-4148-b52f-874ab3ea43f7.png)
@@ -26,9 +26,9 @@ All Obsidian and Task Plugin users love the program. What has been set up with t
     await dv.view("tasksCalendar", {pages: "", view: "month", firstDayOfWeek: "1", options: "style1"})
     ```
     ````
-    
+
     If you paste the main files (js/css) into another folder then "tasksCalendar", you have to replace the name between the first quotation marks.
- 
+
  4. There are 4 different variables to set path/location as "pages", calendar view style as "view", first day of the week (0 or 1) as "firstDayOfWeek" and some style classes as "options"
 
 ---
@@ -56,7 +56,7 @@ pages: "dv.pages().file.tasks.where(t=>!t.checked && t.header.subpath != 'Log')"
 pages: "dv.pages().file.where(f=>f.tags.includes('#ToDo') || f.tags.includes('#Task')).where(f=>f.folder != 'Inbox').tasks"
 ```
 It is also possible to define complex queries. These must start with `dv.pages` and output tasks as a result.
-    
+
 
 ### view:
 ```
@@ -65,7 +65,7 @@ view: "month"
 view: "week"
 ```
 With the view parameter you can set the default calendar view.
-  
+
 
 ### firstDayOfWeek:
 ```
@@ -148,7 +148,7 @@ You can use this option to hide the overdue days flag on overdue tasks.
 dailyNoteFolder: "MyCustomFolder"
 dailyNoteFolder: "Inbox/Daily Notes/Work"
 ```
-This parameter must only be specified if this is to be used. Here you can define a custom folder path for the daily notes if they should not be saved in the default folder for new files. Of course, folder structures with several levels can also be defined here. This paramter 
+This parameter must only be specified if this is to be used. Here you can define a custom folder path for the daily notes if they should not be saved in the default folder for new files. Of course, folder structures with several levels can also be defined here. This paramter
 
 #### dailyNoteFormat:
 ```
@@ -196,7 +196,7 @@ textColor: "#000000"
 icon: "❤️"
 ---
 ```
-    
+
 The color should be hex in quotation marks to work properly. This color is set for text and as semi-transparent background. The icon itself is placed in front of the task filename header.
 
 ![Note Color Demo](https://user-images.githubusercontent.com/59178587/203788233-555edbc4-915c-499c-bdf4-87c6030bfd55.png)
