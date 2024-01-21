@@ -176,7 +176,7 @@ dailyNoteFormat: "YYYY, MMMM DD - dddd"
 dailyNoteFormat: "YYYY-[W]ww"
 ```
 
-This parameter must only be specified if this is to be used. Without this parameter the default format "YYYY-MM-DD" is used to identify your daily notes. You can set a custom format with a limited base set of characters: Y M D [W] ww d . , - : (SPACE)
+This parameter must only be specified if this is to be used. Without this parameter the default format "yyyy-MM-dd" is used to identify your daily notes. You can set a custom format with a limited base set of characters: Y M D [W] ww d . , - : (SPACE)
 
 #### startPosition
 
